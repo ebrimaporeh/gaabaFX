@@ -33,7 +33,7 @@ const MobileNav = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all ${
+                className={`flex flex-col font-bold items-center gap-1 px-3 py-2 rounded-lg transition-all ${
                   active
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground'

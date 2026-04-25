@@ -19,7 +19,7 @@ const Courses = () => {
   };
 
   return (
-    <section className="py-20 bg-foreground" id="courses">
+    <section className="py-20 bg-background" id="courses">
       <div className="container-custom">
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-12">
@@ -35,10 +35,10 @@ const Courses = () => {
                 Education
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
               Choose Your <span className="text-primary">Level</span>
             </h2>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               From complete beginner to elite trader. Every programme is built around the same 
               institutional methodology I use daily.
             </p>
@@ -53,9 +53,9 @@ const Courses = () => {
               variant="outline"
               size="default"
               onClick={() => window.location.href = '/contact'}
-              className="border-white/20 text-white hover:bg-white hover:text-foreground"
+              className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background"
             >
-              View All Programs
+              Get Started
               <ArrowRight className="w-4 h-4" />
             </Button>
           </motion.div>
@@ -74,8 +74,8 @@ const Courses = () => {
               onMouseLeave={() => setHoveredCard(null)}
               className={`relative rounded-2xl transition-all duration-300 ${
                 course.featured
-                  ? 'bg-gradient-to-br from-primary/20 via-white/5 to-transparent border-2 border-primary/40 shadow-lg shadow-primary/10'
-                  : 'bg-white/5 border border-white/10 hover:border-white/20'
+                  ? 'bg-gradient-to-br from-primary/5 via-background to-transparent border-2 border-primary/30 shadow-lg shadow-primary/10'
+                  : 'bg-card border border-border hover:border-primary/30'
               } hover:transform hover:-translate-y-2`}
             >
               {/* Featured Badge */}
@@ -97,25 +97,25 @@ const Courses = () => {
                 )}
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3">
+                <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground mb-3">
                   {course.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   {course.description}
                 </p>
 
                 {/* Price */}
                 <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-serif font-bold text-white">
+                  <span className="text-3xl md:text-4xl font-serif font-bold text-foreground">
                     ${course.price}
                   </span>
                   {course.period && (
-                    <span className="text-gray-400 text-sm ml-1">/{course.period}</span>
+                    <span className="text-muted-foreground text-sm ml-1">/{course.period}</span>
                   )}
                   {!course.period && (
-                    <span className="text-gray-400 text-sm ml-1">one-time</span>
+                    <span className="text-muted-foreground text-sm ml-1">one-time</span>
                   )}
                 </div>
 
@@ -131,7 +131,7 @@ const Courses = () => {
                       className="flex items-center gap-2.5"
                     >
                       {getIcon(feature)}
-                      <span className="text-gray-300 text-sm">{feature}</span>
+                      <span className="text-foreground/70 text-sm">{feature}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -157,7 +157,7 @@ const Courses = () => {
                       variant="outline"
                       size="default"
                       onClick={() => window.location.href = '/contact'}
-                      className="w-full justify-center border-white/20 text-white hover:bg-white hover:text-foreground"
+                      className="w-full justify-center border-border text-foreground hover:bg-foreground hover:text-background"
                     >
                       {course.title === '1-on-1 Mentorship' ? 'Apply Now' : 'Enroll Now'}
                     </Button>
@@ -174,20 +174,20 @@ const Courses = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="mt-12 pt-8 border-t border-white/10 text-center"
+          className="mt-12 pt-8 border-t border-border text-center"
         >
           <div className="flex flex-wrap justify-center gap-6 md:gap-12">
             <div className="flex items-center gap-2 group cursor-pointer">
               <Award className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-              <span className="text-sm text-gray-300 group-hover:text-white transition-colors">30-day money-back guarantee</span>
+              <span className="text-sm text-foreground/70 group-hover:text-foreground transition-colors">30-day money-back guarantee</span>
             </div>
             <div className="flex items-center gap-2 group cursor-pointer">
               <Users className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-              <span className="text-sm text-gray-300 group-hover:text-white transition-colors">Lifetime access & updates</span>
+              <span className="text-sm text-foreground/70 group-hover:text-foreground transition-colors">Lifetime access & updates</span>
             </div>
             <div className="flex items-center gap-2 group cursor-pointer">
               <MessageCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-              <span className="text-sm text-gray-300 group-hover:text-white transition-colors">Private community access</span>
+              <span className="text-sm text-foreground/70 group-hover:text-foreground transition-colors">Private community access</span>
             </div>
           </div>
         </motion.div>

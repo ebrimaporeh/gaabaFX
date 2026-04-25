@@ -20,7 +20,7 @@ const Marquee = () => {
   const marqueeItems = [...items, ...items];
 
   return (
-    <div className="bg-foreground py-4 overflow-hidden border-y border-border">
+    <div className="bg-background py-4 overflow-hidden border-y border-border">
       <div className="relative flex overflow-x-hidden">
         <motion.div
           animate={{ x: [0, '-50%'] }}
@@ -34,10 +34,10 @@ const Marquee = () => {
           {marqueeItems.map((item, index) => (
             <div
               key={`${item}-${index}`}
-              className="flex items-center gap-3 px-6 border-r border-border/20"
+              className="flex items-center gap-3 px-6 border-r border-white/20"
             >
               <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-              <span className="text-sm font-medium text-muted-foreground tracking-wide">
+              <span className="text-sm font-medium text-foreground tracking-wide">
                 {item}
               </span>
             </div>

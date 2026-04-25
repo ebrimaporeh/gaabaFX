@@ -150,7 +150,7 @@ const Testimonials = () => {
                     <div className="pt-4 border-t border-border">
                       <div className="flex justify-between items-center">
                         <div>
-                          <div className="text-xl font-bold text-green-600 dark:text-green-400">
+                          <div className="text-xl font-bold text-primary dark:text-green-400">
                             {testimonial.profit}
                           </div>
                           <div className="text-xs text-muted-foreground">Profit</div>

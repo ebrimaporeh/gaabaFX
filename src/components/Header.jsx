@@ -34,9 +34,9 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-foreground ${
+                className={`text-sm font-bold transition-colors hover:text-foreground ${
                   isActive(link.path)
-                    ? 'text-foreground'
+                    ? 'text-primary'
                     : 'text-muted-foreground'
                 }`}
               >

@@ -3,10 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Shield, TrendingUp, Award, BarChart3, ArrowRight } from 'lucide-react';
-import TraderImage from './TraderImage';
 import Button from './Button';
 import { siteData } from '../data/siteData';
-
 
 const AboutPreview = () => {
   const pillars = [
@@ -44,8 +42,12 @@ const AboutPreview = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden">
-              <TraderImage variant="about" className="w-full h-auto" />
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/gabba-hero-5.jpg" 
+                alt={siteData.traderName}
+                className="w-full h-auto object-cover"
+              />
               
               {/* Quote Card Overlay */}
               <motion.div
@@ -53,7 +55,7 @@ const AboutPreview = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-lg"
+                className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-lg rounded-xl p-4 border border-primary/20 shadow-lg"
               >
                 <div className="text-center">
                   <p className="text-sm font-serif italic text-foreground mb-2">

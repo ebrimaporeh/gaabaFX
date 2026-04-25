@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { TrendingUp, ArrowRight, Play } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import Button from './Button';
-import TraderImage from './TraderImage';
 
 const Hero = () => {
   const [tickerPrices, setTickerPrices] = useState({
@@ -41,7 +40,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen pt-[76px] overflow-hidden">
+    <section className="relative min-h-screen pt-[76px]  mb-12">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent pointer-events-none" />
       
@@ -123,14 +122,18 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative lg:min-h-[600px]"
+            className="relative lg:min-h-[300px]"
           >
             {/* Main Trader Image */}
-            <div className="relative rounded-2xl overflow-hidden">
-              <TraderImage variant="hero" className="w-full h-auto" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/gabba-hero-4.jpg" 
+                alt="Gabba - Professional Forex Trader"
+                className="w-full lg:h-[600px] object-cover"
+              />
               
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Floating Badge - Win Rate */}
@@ -138,7 +141,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="absolute top-8 -left-4 md:left-0 bg-card rounded-xl p-3 shadow-lg border border-border"
+              className="hidden md:block absolute top-8 -left-4 md:left-0 bg-card rounded-xl p-3 shadow-lg border border-border"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
