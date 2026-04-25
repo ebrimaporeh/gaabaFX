@@ -27,6 +27,183 @@
   --ring: #c9a84c;
   --radius: 0.5rem;
 }
+ 
+
+/* Navy and Gold */
+/* :root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #d4af37;
+  --primary-foreground: #0f172a;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #d4af37;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: rgba(15, 23, 42, 0.1);
+  --input: rgba(15, 23, 42, 0.1);
+  --ring: #d4af37;
+  --radius: 0.5rem;
+} */
+
+/* Slate and Teal */
+/* :root {
+  --background: #ffffff;
+  --foreground: #1e293b;
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #1e293b;
+  --primary: #0d9488;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --accent: #0d9488;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(30, 41, 59, 0.1);
+  --input: rgba(30, 41, 59, 0.1);
+  --ring: #0d9488;
+  --radius: 0.5rem;
+} */
+
+/* Navy Blue Theme - Professional & Sophisticated */
+/* :root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #d4af37;
+  --primary-foreground: #0f172a;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #d4af37;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: rgba(15, 23, 42, 0.1);
+  --input: rgba(15, 23, 42, 0.1);
+  --ring: #d4af37;
+  --radius: 0.5rem;
+} */
+
+
+/* Theme Option 3: Charcoal & Blue (Corporate/Trustworthy)
+ */
+ /* :root {
+  --background: #f9fafb;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #111827;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #f9fafb;
+  --border: rgba(17, 24, 39, 0.1);
+  --input: rgba(17, 24, 39, 0.1);
+  --ring: #2563eb;
+  --radius: 0.5rem;
+} */
+
+/* Theme Option 4: Ivory & Emerald (Luxury/Nature)
+ */
+ /* :root {
+  --background: #fefcf3;
+  --foreground: #1a2e1f;
+  --card: #ffffff;
+  --card-foreground: #1a2e1f;
+  --popover: #ffffff;
+  --popover-foreground: #1a2e1f;
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --secondary: #f0fdf4;
+  --secondary-foreground: #1a2e1f;
+  --muted: #f0fdf4;
+  --muted-foreground: #6b7280;
+  --accent: #059669;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #fefcf3;
+  --border: rgba(26, 46, 31, 0.1);
+  --input: rgba(26, 46, 31, 0.1);
+  --ring: #059669;
+  --radius: 0.5rem;
+} */
+
+/* Theme Option 5: Pure Minimal (Black & White)
+ */
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #000000;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --accent: #000000;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
+  --ring: #000000;
+  --radius: 0.5rem;
+} */
+
+
+/* Theme Option 6: Warm Gray & Coral (Friendly/Approachable)
+ */
+
+/* :root {
+  --background: #faf9f8;
+  --foreground: #2d2d2d;
+  --card: #ffffff;
+  --card-foreground: #2d2d2d;
+  --popover: #ffffff;
+  --popover-foreground: #2d2d2d;
+  --primary: #f97316;
+  --primary-foreground: #ffffff;
+  --secondary: #fef3c7;
+  --secondary-foreground: #2d2d2d;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --accent: #f97316;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #faf9f8;
+  --border: rgba(45, 45, 45, 0.1);
+  --input: rgba(45, 45, 45, 0.1);
+  --ring: #f97316;
+  --radius: 0.5rem;
+} */
 
 .dark {
   --background: #0d0d0d;
