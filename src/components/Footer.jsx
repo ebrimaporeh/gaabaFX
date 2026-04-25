@@ -158,23 +158,11 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-center text-gray-400">
               © {currentYear} {siteData.name}. All rights reserved.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <Link to="/privacy" className="text-xs text-gray-400 hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/terms" className="text-xs text-gray-400 hover:text-primary transition-colors">
-                Terms of Service
-              </Link>
-              <Link to="/disclaimer" className="text-xs text-gray-400 hover:text-primary transition-colors">
-                Risk Disclaimer
-              </Link>
-            </div>
-          </div>
+           
 
           <p className="text-center text-xs text-gray-500 mt-4 max-w-2xl mx-auto px-4">
             Trading involves substantial risk of loss and is not suitable for all investors. 
