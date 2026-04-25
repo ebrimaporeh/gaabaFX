@@ -79,12 +79,13 @@ const Hero = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex 1flex-col sm:flex-row gap-4 mb-12 ">
               <Button
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
                 iconPosition="right"
+                className=''
                 onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Join the Programme

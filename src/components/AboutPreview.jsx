@@ -61,7 +61,7 @@ const AboutPreview = () => {
                   <p className="text-sm font-serif italic text-foreground mb-2">
                     "The market doesn't reward emotions. It rewards preparation and discipline."
                   </p>
-                  <p className="text-xs font-medium text-primary uppercase tracking-wider">
+                  <p className="text-md font-bold text-primary uppercase tracking-wider">
                     — {siteData.traderName}
                   </p>
                 </div>
