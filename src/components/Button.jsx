@@ -11,7 +11,7 @@ const Button = ({
   iconPosition = 'left',
   ...props 
 }) => {
-  const baseStyles = 'inline-flex items-center gap-2 font-medium transition-all duration-200 rounded-full cursor-pointer';
+  const baseStyles = 'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 rounded-full cursor-pointer';
   
   const variants = {
     primary: 'bg-primary text-primary-foreground hover:scale-105 hover:shadow-lg',

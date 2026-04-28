@@ -19,7 +19,7 @@ const Courses = () => {
   };
 
   return (
-    <section className="py-20 bg-background" id="courses">
+    <section className="py-10 bg-background" id="courses">
       <div className="container-custom">
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-12">

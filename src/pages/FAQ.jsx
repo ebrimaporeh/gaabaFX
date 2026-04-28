@@ -14,9 +14,9 @@ const FAQ = () => {
   };
 
   return (
-    <div className="pt-19 md:pt-19">
+    <div className="py-10 md:py-36">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-primary/5 to-transparent">
+      <section className=" bg-linear-to-br from-primary/5 to-transparent">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -35,7 +35,7 @@ const FAQ = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12">
+      <section className="pt-12">
         <div className="container-custom max-w-3xl">
           <div className="space-y-4">
             {siteData.faqs.map((faq, index) => (
@@ -81,7 +81,7 @@ const FAQ = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="mt-12 text-center"
+            className="mt-6 md:mt-12 text-center"
           >
             <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8">
               <h3 className="text-xl font-bold text-foreground mb-2">Still have questions?</h3>
@@ -101,6 +101,7 @@ const FAQ = () => {
                   variant="outline"
                   size="lg"
                   onClick={() => window.location.href = '/contact'}
+                  className=' text-center'
                 >
                   Contact Form
                 </Button>

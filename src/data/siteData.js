@@ -1,9 +1,9 @@
 // src/data/siteData.js
 export const siteData = {
-  name: "Gabba FX Trading",
-  traderName: "Gabba",
+  name: "Garba FX Trading",
+  traderName: "Garba",
   phone: "+220 2738367",
-  email: "gabba@fxtrading.com",
+  email: "garba@fxtrading.com",
   whatsappNumber: "2202738367",
   yearsOfExperience: 10,
   studentsTrained: 3400,
@@ -82,7 +82,7 @@ export const siteData = {
       location: "Ghana",
       role: "FX Pro Member",
       avatar: "KA",
-      text: "Gabba doesn't just teach setups — he rewires how you think about price. I went from blowing two accounts to pulling consistent profit within 3 months.",
+      text: "Garba doesn't just teach setups — he rewires how you think about price. I went from blowing two accounts to pulling consistent profit within 3 months.",
       profit: "+$4,820",
       accountSize: "$10,000",
       period: "Month 3"

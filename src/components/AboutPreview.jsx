@@ -31,7 +31,7 @@ const AboutPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-background" id="about">
+    <section className="py-10 md:py-20 bg-background" id="about">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}

@@ -29,7 +29,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-10 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent" />
       
@@ -51,7 +51,7 @@ const CTA = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 mb-6">
               <Star className="w-4 h-4 text-primary fill-current" />
               <span className="text-sm font-medium text-primary">
-                Limited spots available — new cohort opens monthly
+                Limited spots — new cohort opens monthly
               </span>
             </div>
           </motion.div>
@@ -129,7 +129,7 @@ const CTA = () => {
               <p className="text-center text-sm text-foreground/80 mb-4">
                 Get weekly market analysis and trading tips straight to your inbox
               </p>
-              <form onSubmit={handleSubscribe} className="flex gap-2">
+              <form onSubmit={handleSubscribe} className="flex flex-col md:flex-row gap-2">
                 <input
                   type="email"
                   value={email}

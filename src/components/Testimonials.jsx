@@ -56,7 +56,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-background" id="results">
+    <section className="py-10 md:py-20 bg-background" id="results">
       <div className="container-custom">
         {/* Header */}
         <motion.div
